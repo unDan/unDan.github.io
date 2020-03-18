@@ -247,8 +247,8 @@ footer {
 	text-shadow: 2px 2px 3px black;
 }
 
-#sales>owl-carousel {
-	max-width: 1400px !important;
+#sale_carousel {
+	max-width: 1500px !important;
 	margin-left: auto;
 	margin-right: auto;
 }
