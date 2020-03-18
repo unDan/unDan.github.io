@@ -68,7 +68,7 @@ $(document).ready(function(){
 		unblockScroll();
 	});
 	
-	$("#submit-btn").on('click', function(){
+	/*$("#submit-btn").on('click', function(){
 		var client_name = $("#name-input").val();
 		var client_email = $("#email-input").val();
 		var client_phone = $("#phone-input").val();
@@ -85,7 +85,7 @@ $(document).ready(function(){
 				'date': date
 			},
 		});
-	});
+	});*/
 	
 	
 	$(".name-input").inputmask({
