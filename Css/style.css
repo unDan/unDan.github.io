@@ -458,4 +458,6 @@ img.img-scale-75px {
 
 .owl-carousel {
 	max-width: 1400px !important;
+	margin-left: auto;
+	margin-right: auto;
 }
