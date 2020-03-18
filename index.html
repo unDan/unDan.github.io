@@ -442,10 +442,10 @@
 						<form>
 							<div class="row py-3">
 								<div class="col-12 form-group">
-									<input class="form-control mt-5 name-input" type="text" name="Name" placeholder="Ваше имя" required>
+									<input id="name-input" class="form-control mt-5 name-input" type="text" name="Name" placeholder="Ваше имя" required>
 								</div>
 								<div class="col-12 form-group">
-									<input class="form-control email-input" type="text" name="Email" placeholder="Адрес электронной почты">
+									<input id="email-input" class="form-control email-input" type="text" name="Email" placeholder="Адрес электронной почты">
 								</div>
 								<div class="col-12">
 									<div class="row form-group">
@@ -467,8 +467,7 @@
 											</select>
 										</div>
 										<div class="col-6 col-sm-8 col-md-9">
-											<input class="form-control phone-input" type="text" name="Phone" placeholder="Номер телефона" required="">
-											
+											<input id="phone-input" class="form-control phone-input" type="text" name="Phone" placeholder="Номер телефона" required="">										
 										</div> 
 									</div>
 								</div>
@@ -476,7 +475,7 @@
 									<input class="form-control" id="date-input" type="text" name="Date" placeholder="Дата записи" required>
 								</div> 
 								<div class="col-12 form-group">
-									<button class="btn px-4 py-2 btn-dark button-black submit-btn" type="submit">Записаться</button>
+									<button id="submit-btn" class="btn px-4 py-2 btn-dark button-black" type="submit">Записаться</button>
 								</div>
 							</div>
 						</form>
