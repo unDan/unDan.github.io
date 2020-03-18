@@ -9,13 +9,15 @@ $(document).ready(function(){
 		responsive:{
 			0: {
 				items: 1,
-				autoHeight: true
+				autoHeight: true,
 			},
 			576: {
-				items: 2
+				items: 2,
+				mouseDrag: true
 			},
 			992: {
-				items: 3
+				items: 3,
+				mouseDrag: true
 			},
 			1500: {
 				items: 4,
