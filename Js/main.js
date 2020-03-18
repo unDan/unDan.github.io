@@ -17,7 +17,7 @@ $(document).ready(function(){
 			992: {
 				items: 3
 			},
-			1400: {
+			1500: {
 				items: 4,
 				mouseDrag: false
 			}
