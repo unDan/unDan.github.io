@@ -456,6 +456,6 @@ img.img-scale-75px {
 	width: 75px !important;
 }
 
-.owl-item {
-	max-width: 500px !important;
+.owl-stage {
+	max-width: 1400px !important;
 }
