@@ -16,9 +16,6 @@ $(document).ready(function(){
 			},
 			992: {
 				items: 3
-			},
-			1400: {
-				items: 4
 			}
 		}
 	});
