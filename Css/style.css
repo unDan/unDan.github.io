@@ -228,7 +228,7 @@ footer {
 	background: #f8f9fa;
 }
 
-#catalog>owl-carousel {
+#catalog_carousel {
 	max-width: 1700px !important;
 	margin-left: auto;
 	margin-right: auto;
