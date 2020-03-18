@@ -5,12 +5,6 @@ $message .= "E-mail: " . $_POST['email'] . "<br/>";
 $message .= "Номер телефона: " . $_POST['phone'] . "<br/>";
 $message .= "Дата записи: " . $_POST['date'];      
 send_mail($message); // отправим письмо
-$msg_box = "Сообщение успешно отправлено!";
-
-// делаем ответ на клиентскую часть в формате JSON
-echo json_encode(array(
-	'result' => $msg_box
-));
 
 // функция отправки письма
 function send_mail($message){
