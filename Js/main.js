@@ -19,7 +19,7 @@ $(document).ready(function(){
 			},
 			1400: {
 				items: 4,
-				drag: false
+				mouseDrag: false
 			}
 		}
 	});
