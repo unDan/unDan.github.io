@@ -68,22 +68,22 @@ $(document).ready(function(){
 		unblockScroll();
 	});
 	
-	$(".submit-btn").on('click', function(){
-		var client_name = $(".name-input").val();
-		var client_email = $(".email-input").val();
-		var client_phone = $(".phone-input").val();
+	$("#submit-btn").on('click', function(){
+		var client_name = $("#name-input").val();
+		var client_email = $("#email-input").val();
+		var client_phone = $("#phone-input").val();
 		var date = $("#date-input").val();
 		
 		$.ajax({
-			type: "POST",
-			url: "../php/ajax_index.php",
+			url: "index.php",
+			type: "post",
+			dataType: "json",
 			data: {
 				'name': client_name,
 				'email': client_email,
 				'phone': client_phone,
 				'date': date
 			},
-			dataType: "json",
 		});
 	});
 	
