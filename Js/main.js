@@ -10,14 +10,18 @@ $(document).ready(function(){
 			0: {
 				items: 1,
 				autoHeight: true,
+				mouseDrag: false,
+				touchDrag: true
 			},
 			576: {
 				items: 2,
-				mouseDrag: true
+				mouseDrag: true,
+				touchDrag: true
 			},
 			992: {
 				items: 3,
-				mouseDrag: true
+				mouseDrag: true,
+				touchDrag: true
 			},
 			1500: {
 				items: 4,
