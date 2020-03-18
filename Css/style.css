@@ -228,6 +228,12 @@ footer {
 	background: #f8f9fa;
 }
 
+#catalog>owl-carouse {
+	max-width: 1800px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #spacing {
 	padding-left: 2rem;
 	padding-right: 1rem;
@@ -239,6 +245,12 @@ footer {
 	background-position: center;
 	color: white;
 	text-shadow: 2px 2px 3px black;
+}
+
+#sales>owl-carousel {
+	max-width: 1400px !important;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #servis {
@@ -454,10 +466,4 @@ img.img-scale-150px {
 
 img.img-scale-75px {
 	width: 75px !important;
-}
-
-.owl-carousel {
-	max-width: 1366px !important;
-	margin-left: auto;
-	margin-right: auto;
 }
