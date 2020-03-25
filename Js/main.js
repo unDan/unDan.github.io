@@ -123,7 +123,6 @@ $(document).ready(function(){
 		"locale": "ru"
 	});
 	
-	$('.main-form').sendMail();
 })
 
 function blockScroll(){
