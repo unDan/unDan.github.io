@@ -122,6 +122,8 @@ $(document).ready(function(){
 		position: "below",
 		"locale": "ru"
 	});
+	
+	$('.main-form').sendMail();
 })
 
 function blockScroll(){
