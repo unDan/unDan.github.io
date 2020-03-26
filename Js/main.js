@@ -68,28 +68,6 @@ $(document).ready(function(){
 		unblockScroll();
 	});
 	
-	$("#submit-btn").on('submit', function(e){
-		e.preventDefault();
-		var client_name = $("#name-input").val();
-		var client_email = $("#email-input").val();
-		var client_phone = $("#phone-input").val();
-		var date = $("#date-input").val();
-		
-		$.ajax({
-			url: "https://raw.githubusercontent.com/unDan/unDan.github.io/master/Js/index.php",
-			type: "post",
-			dataType: "json",
-			data: {
-				'name': client_name,
-				'email': client_email,
-				'phone': client_phone,
-				'date': date
-			},
-			
-		});
-	});
-	
-	
 	$(".name-input").inputmask({
 		mask: "a{1,50}",
 		greedy: false,
@@ -125,6 +103,28 @@ $(document).ready(function(){
 		"locale": "ru"
 	});
 	
+	$("#submit-btn").on('submit', function(e){
+		e.preventDefault();
+		var client_name = $("#name-input").val();
+		var client_email = $("#email-input").val();
+		var client_phone = $("#phone-input").val();
+		var date = $("#date-input").val();
+		
+		$.ajax({
+			url: "https://raw.githubusercontent.com/unDan/unDan.github.io/master/Js/index.php",
+			type: "post",
+			dataType: "json",
+			data: {
+				'name': client_name,
+				'email': client_email,
+				'phone': client_phone,
+				'date': date
+			},
+			success: function(data){
+				$('.serever-message').html(data.result);
+			}			
+		});
+	});
 	//$('form.main-form').sendMail();
 })
 
