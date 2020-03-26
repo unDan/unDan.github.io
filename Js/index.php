@@ -8,9 +8,7 @@ send_mail($message); // отправим письмо
 $msg_box = "<span style="color: green;">Вы успешно записались на замер!</span>";
 
 // делаем ответ на клиентскую часть в формате JSON
-echo json_encode(array(
-	'result' => $msg_box
-));
+echo $msg_box;
 
 // функция отправки письма
 function send_mail($message){
