@@ -68,14 +68,15 @@ $(document).ready(function(){
 		unblockScroll();
 	});
 	
-	/*$("#submit-btn").on('click', function(){
+	$("#submit-btn").on('submit', function(e){
+		e.preventDefault();
 		var client_name = $("#name-input").val();
 		var client_email = $("#email-input").val();
 		var client_phone = $("#phone-input").val();
 		var date = $("#date-input").val();
 		
 		$.ajax({
-			url: "index.php",
+			url: "https://raw.githubusercontent.com/unDan/unDan.github.io/master/Js/index.php",
 			type: "post",
 			dataType: "json",
 			data: {
@@ -84,8 +85,9 @@ $(document).ready(function(){
 				'phone': client_phone,
 				'date': date
 			},
+			
 		});
-	});*/
+	});
 	
 	
 	$(".name-input").inputmask({
